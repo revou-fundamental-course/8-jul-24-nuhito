@@ -1,1 +1,59 @@
 /* Ini CSS */
+
+.main-title{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content{
+    flex: 1;
+    padding: 12px;
+}
+
+.input-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form{
+    background-color: aliceblue;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.button{
+    background-color: #98c7ce;
+    border: 2px solid darkgray;
+    height: 32px;
+    border-radius: 10px;
+}
+
+.submit{
+    background-color: rgb(121, 174, 220);
+}
+
+input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid whitesmoke;
+    -webkit-transition: 0.5s;
+    transition:0.5s;
+    outline: none;
+}
+
+input[type=number]:focus{
+    border: 3px solid rgb(180, 208, 172);
+}
+
+.result-section{
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 12px;
+}
