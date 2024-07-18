@@ -14,6 +14,12 @@ main{
     padding: 12px;
 }
 
+.result{
+    background-color: aliceblue;
+    border-radius: 13px;
+    padding : 8px;
+}
+
 .input-title{
     font-size: 14px;
     font-weight: bold;
@@ -22,7 +28,7 @@ main{
 form{
     background-color: aliceblue;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 .button{
@@ -56,4 +62,31 @@ input[type=number]:focus{
     background-color: aliceblue;
     border-radius: 10px;
     padding: 12px;
+}
+
+.resultLabel{
+    text-align: center;
+}
+
+.resultValue{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.resultDescription{
+    text-align: center;
+}
+
+Hasil
+{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+@media only screen and (max-width: 425px){
+    main{
+        flex-direction: column;
+    }
 }

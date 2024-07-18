@@ -26,18 +26,18 @@
     
             <!-- Form --> 
             <section>
-                <form>
+                <form id="bmi-form">
                     <div>
                         <div class="input-title">Jenis Kelamin</div>
                         <input type="radio" id="sex-selection-male"><label for="sex-selection-male">Laki-laki</label>
                         <input type="radio" id="sex-selection-female"><label for="sex-selection-female">Perempuan</label>
                     </div>
                     <div class="input-title">
-                        <label for="input-berat-badan">Berat Badan (Kg)</label>
+                        <label for="input-berat-badan">Berat Badan (kg)</label>
                         <input type="number" id="input-berat-badan">
                     </div>
                     <div class="input-title">
-                        <label for="input-usia">Usia (Th)</label>
+                        <label for="input-usia">Usia (tahun)</label>
                         <input type="number" id="input-usia">
                     </div>
                     <div class="input-title">
@@ -45,8 +45,8 @@
                         <input type="number" id="input-tinggi-badan">
                     </div>
                     <div>
-                        <button class="button submit">Submit BMI</button>
-                        <button class="button reset">Reset</button>
+                        <button class="button submit" type="button" onclick="updateResult();">Submit BMI</button>
+                        <button class="button reset" type="button" onclick="resetForm()">Reset</button>
                     </div>
                 </form>
             </section>
@@ -72,28 +72,27 @@
         <!-- right content -->
         <section class="main-content">
             <!-- Result Article -->
-            <article>
-                <header>
-                    <h1>Result</h1>
-                </header>
-    
-                <!-- Result Section -->
-                <section class="result-section">
-                    <p>Hasil BMI anda adalah :</p>
+            <section class="main-content result">            
+                <article>
+                <div class="result">
+                    <section style="    font-weight: bold; font-size: 20px;">Hasil</section>
+                    <div class="resultContent">
+                      <p class="resultLabel">BMI:</p>
+                      <p class="resultValue" id="bmi-value">0</p>
+                      <p class="resultDescription" id="bmi-category">-</p>
 
-                    <h2>24.7</h2>
-
-                    <p>Anda memilki berat badan berlebih</p> 
-                </section>
-    
-                <!-- Result Article -->
-                <article></article>
-    
-                <!-- General Information -->
-                <section></section>
-            </article>
+                    </div>
+                    <!-- Detail bb ideal -->
+                    <p id="result-ideal-bb"></p>
+                    <!-- Paragraph detail yang ditampilkan berdasarkan hasil perhitungan BMI yang di handle oleh JS -->
+                    <p id="result-detailed-description"></p>
+                  </div>
+                </article>
+           </section>
         </section>
     </main>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
